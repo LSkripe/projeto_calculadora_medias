@@ -36,7 +36,7 @@ function adicionaLinha(){
     
         linhas += linha;
     }
-    
+
     inputNomeAtividade.value = '';
     inputNotaAtividade.value = '';
 }
@@ -49,7 +49,7 @@ function atualizaTabela(){
 function atualizaMediaFinal(){
     const mediafinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediafinal;
+    document.getElementById('media-final-valor').innerHTML = mediafinal.toFixed(2);
     document.getElementById('media-final-resultado').innerHTML = mediafinal >= notaMinima ? spamAprovado : spamReprovado;
 }
 
